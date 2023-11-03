@@ -1,0 +1,53 @@
+namecreate = input("Welcome to password generator, Enter  name")
+print(f"Welcome {namecreate} to password generator")
+print("Tip: A Good password has 10 in length and more than 3 numbers and")
+print("At least 2 uppercased letters")
+password1 = input("Enter your password")
+password2 = input("Confirm your password")
+lettercount = 0 
+if password1 == password2:
+ print("Your Passwords match lets continue")
+else: 
+ print("Your passwords do not match, try again")
+ exit()
+
+if (len(password2)) < 10:
+ print("Your password is too short, Restart?")
+ exit()
+passwordnum = password2
+
+  
+def count_integers(str):
+    int_count = 0
+    for char in str:
+        if char.isdigit():
+          int_count += 1
+    return int_count 
+  
+int_count = count_integers(password2)
+def count_isupper(str):
+  upper_count = 0
+  for char in str:
+    if char.isupper():
+      upper_count += 1
+  return upper_count
+
+upper_count = count_isupper(password2)
+
+if upper_count < 2:
+  print("Your password needs at least 2 uppercase letters. Restart the code.")
+  exit()
+
+      
+if any(x.isupper()  for x in password2):
+         lettercount += 1
+      
+if lettercount < 2:
+          print("Your password has enough uppercase letters")
+          
+print(int_count)
+
+print(f"Your password is {len(password2)} characters long")
+print(f"Your password has {int_count} numbers")
+
+print(f"Your password has {upper_count} uppercase letters")

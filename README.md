@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @ZenoDrizzler
+- 👋 Hi, I’m Dakota
 - 👀 I’m interested in Python , Zoology and i love Dinosaurs and  mythlogy 
 - 🌱 I’m currently learning Python and data management 
 - 💞️ I’m looking to collaborate on Nothing so far! But Open Source is ok sometimes for me!
